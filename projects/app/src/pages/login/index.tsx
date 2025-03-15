@@ -178,6 +178,8 @@ const Login = ({ ChineseRedirectUrl }: { ChineseRedirectUrl: string }) => {
               </Center>
             )}
           </Box>
+          {/* add by hjf at 2025-03-15 隐藏联系我们 */}
+          {/*
           {feConfigs?.concatMd && (
             <Box
               mt={8}
@@ -191,6 +193,7 @@ const Login = ({ ChineseRedirectUrl }: { ChineseRedirectUrl: string }) => {
               {t('common:support.user.login.can_not_login')}
             </Box>
           )}
+          */}
         </Flex>
 
         {isOpen && <CommunityModal onClose={onClose} />}

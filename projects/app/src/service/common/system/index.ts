@@ -50,14 +50,15 @@ export async function getInitConfig() {
 }
 
 const defaultFeConfigs: FastGPTFeConfigsType = {
-  show_emptyChat: true,
-  show_git: true,
-  docUrl: 'https://doc.tryfastgpt.ai',
+  show_emptyChat: false, // modify by hjf at 2025-03-15 暂时隐藏
+  show_git: false, // modify by hjf at 2025-03-15 暂时隐藏
+  // docUrl: 'https://doc.tryfastgpt.ai', // modify by hjf at 2025-03-15 注释原链接
+  docUrl: '', //modify by hjf at 2025-03-15 设置为空字符串，表示隐藏对应界面相关控件
   openAPIDocUrl: 'https://doc.tryfastgpt.ai/docs/development/openapi',
   systemPluginCourseUrl: 'https://fael3z0zfze.feishu.cn/wiki/ERZnw9R26iRRG0kXZRec6WL9nwh',
   appTemplateCourse:
     'https://fael3z0zfze.feishu.cn/wiki/CX9wwMGyEi5TL6koiLYcg7U0nWb?fromScene=spaceOverview',
-  systemTitle: 'FastGPT',
+  systemTitle: 'NexaAI', // modify by hjf at 2025-03-15 改为我们的系统名
   concatMd:
     '项目开源地址: [FastGPT GitHub](https://github.com/labring/FastGPT)\n交流群: ![](https://oss.laf.run/otnvvf-imgs/fastgpt-feishu1.png)',
   limit: {
